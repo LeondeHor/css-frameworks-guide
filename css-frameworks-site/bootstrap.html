@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap — CSS Frameworks Guide</title>
+  <link rel="stylesheet" href="https://unpkg.com/chota@latest">
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <div class="nav-left">
+        <a class="brand" href="index.html"><strong>CSS-Guide</strong></a>
+        <button class="button clear nav-toggle" id="burger-btn" aria-label="Открыть меню">☰</button>
+      </div>
+      <div class="nav-right" id="nav-menu">
+        <a href="index.html">Главная</a>
+        <a href="bootstrap.html" class="active">Bootstrap</a>
+        <a href="tailwind.html">Tailwind</a>
+        <a href="bulma.html">Bulma</a>
+        <a href="foundation.html">Foundation</a>
+        <a href="chota.html">Chota</a>
+        <a href="comparison.html">Сравнение</a>
+        <a href="tutorials.html">Видео</a>
+        <a href="contacts.html">Контакты</a>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container main-layout">
+    <div class="row">
+      <main class="col-12 col-8-desktop">
+        <section class="card content-card">
+          <h1>Bootstrap: Лидер индустрии</h1>
+          <p><strong>Bootstrap</strong> — это самый популярный в мире HTML, CSS и JS фреймворк для разработки адаптивных мобильных веб-проектов. Изначально созданный разработчиками Twitter, он стал стандартом де-факто в веб-разработке.</p>
+          
+          <h2>Особенности Bootstrap</h2>
+          <p>Bootstrap использует компонентный подход. Это значит, что для создания карточки товара или навигационного меню вам достаточно добавить правильные классы к стандартным HTML-тегам, таким как <code>&lt;div&gt;</code> или <code>&lt;nav&gt;</code>.</p>
+          
+          <h3>Плюсы и минусы</h3>
+          <div class="row">
+            <div class="col-6-desktop">
+              <h4 class="text-success">Преимущества</h4>
+              <ul>
+                <li>Огромное сообщество и множество документации.</li>
+                <li>Сотни готовых шаблонов.</li>
+                <li>Мощная 12-колоночная сетка.</li>
+              </ul>
+            </div>
+            <div class="col-6-desktop">
+              <h4 class="text-error">Недостатки</h4>
+              <ul>
+                <li>Большой размер файлов (~160 КБ в полной версии).</li>
+                <li>Сайты часто выглядят шаблонно ("Bootstrap-look").</li>
+                <li>Зависимость от JS для интерактивных компонентов.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </main>
+      
+      <aside class="col-12 col-4-desktop">
+        <div class="card sidebar-card mb-2">
+          <h3>Навигация по базе</h3>
+          <ul class="is-unstyled">
+            <li><a href="bootstrap.html" class="button full-width outline mb-1">Обзор Bootstrap</a></li>
+            <li><a href="tailwind.html" class="button full-width outline mb-1">Обзор Tailwind</a></li>
+            <li><a href="chota.html" class="button full-width outline">Обзор Chota</a></li>
+          </ul>
+        </div>
+        <div class="card sidebar-card">
+          <h3>Подписка на обновления</h3>
+          <form id="subscribe-form">
+            <label for="sub-email">Ваш Email:</label>
+            <input type="email" id="sub-email" placeholder="name@example.com" required class="mb-1">
+            <button type="submit" class="button primary full-width">Подписаться</button>
+          </form>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container text-center">
+      <p>&copy; 2026 Учебный проект «CSS-фреймворки». Все права защищены.</p>
+      <p><a href="contacts.html">Связаться с автором</a></p>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

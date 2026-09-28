@@ -1,0 +1,104 @@
+/* Кастомные стили поверх Chota CSS */
+
+:root {
+  --site-primary: #0d6efd;
+  --bg-light: #f8f9fa;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f4f6f8;
+}
+
+.main-layout {
+  flex: 1;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.site-header {
+  background: #ffffff;
+  border-bottom: 1px solid #e1e4e8;
+  padding: 0.5rem 0;
+}
+
+.site-footer {
+  background: #22252a;
+  color: #ffffff;
+  padding: 1.5rem 0;
+  margin-top: auto;
+}
+
+.site-footer a {
+  color: #a0aec0;
+}
+
+.content-card, .sidebar-card {
+  background: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.responsive-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+}
+
+/* Адаптируемая таблица */
+.table-wrapper {
+  overflow-x: auto;
+}
+
+/* Мобильная навигация (бургер) */
+@media (max-width: 767px) {
+  .nav-right {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: #ffffff;
+    padding: 1rem 0;
+  }
+
+  .nav-right.is-open {
+    display: flex;
+  }
+
+  #burger-btn {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 768px) {
+  #burger-btn {
+    display: none;
+  }
+}
+
+/* Видеоконтейнер с сохранением пропорций 16:9 */
+.responsive-iframe {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+
+.responsive-iframe iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.mb-1 { margin-bottom: 0.5rem; }
+.mb-2 { margin-bottom: 1rem; }
+.mt-2 { margin-top: 1rem; }

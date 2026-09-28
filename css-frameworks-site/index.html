@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Frameworks Guide — Главная</title>
+  <link rel="stylesheet" href="https://unpkg.com/chota@latest">
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <div class="nav-left">
+        <a class="brand" href="index.html"><strong>CSS-Guide</strong></a>
+        <button class="button clear nav-toggle" id="burger-btn" aria-label="Открыть меню">☰</button>
+      </div>
+      <div class="nav-right" id="nav-menu">
+        <a href="index.html" class="active">Главная</a>
+        <a href="bootstrap.html">Bootstrap</a>
+        <a href="tailwind.html">Tailwind</a>
+        <a href="bulma.html">Bulma</a>
+        <a href="foundation.html">Foundation</a>
+        <a href="chota.html">Chota</a>
+        <a href="comparison.html">Сравнение</a>
+        <a href="tutorials.html">Видео</a>
+        <a href="contacts.html">Контакты</a>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container main-layout">
+    <div class="row">
+      <main class="col-12 col-8-desktop">
+        <section class="card content-card">
+          <h1>Экосистема современных CSS-фреймворков</h1>
+          <p>В современной веб-разработке создание адаптивных, кроссбраузерных и визуально привлекательных пользовательских интерфейсов «с нуля» требует существенных временных затрат. CSS-фреймворки предоставляют разработчикам готовые наборы стилей, сеток и компонентов.</p>
+          <h2>Что такое CSS-фреймворк?</h2>
+          <p>Это библиотека предварительно написанного CSS-кода (а иногда и JavaScript), которая позволяет быстрее верстать веб-страницы. Вместо того чтобы писать стили для каждой кнопки или формы, вы используете готовые классы.</p>
+          <h3>Основные преимущества:</h3>
+          <ul>
+            <li><strong>Скорость:</strong> Сокращение времени на написание базовых стилей.</li>
+            <li><strong>Адаптивность (Responsive):</strong> Встроенная поддержка мобильных устройств.</li>
+            <li><strong>Кроссбраузерность:</strong> Гарантия того, что сайт выглядит одинаково в Chrome, Safari и Firefox.</li>
+          </ul>
+          <p>На этом сайте мы подробно рассмотрим 5 популярных решений: от тяжеловесных корпоративных фреймворков до сверхлегких микро-библиотек.</p>
+        </section>
+      </main>
+      
+      <!-- Сайдбар одинаковый для всех страниц -->
+      <aside class="col-12 col-4-desktop">
+        <div class="card sidebar-card mb-2">
+          <h3>Навигация по базе</h3>
+          <ul class="is-unstyled">
+            <li><a href="bootstrap.html" class="button full-width outline mb-1">Обзор Bootstrap</a></li>
+            <li><a href="tailwind.html" class="button full-width outline mb-1">Обзор Tailwind</a></li>
+            <li><a href="chota.html" class="button full-width outline">Обзор Chota</a></li>
+          </ul>
+        </div>
+        <div class="card sidebar-card">
+          <h3>Подписка на обновления</h3>
+          <form id="subscribe-form">
+            <label for="sub-email">Ваш Email:</label>
+            <input type="email" id="sub-email" placeholder="name@example.com" required class="mb-1">
+            <button type="submit" class="button primary full-width">Подписаться</button>
+          </form>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container text-center">
+      <p>&copy; 2026 Учебный проект «CSS-фреймворки». Все права защищены.</p>
+      <p><a href="contacts.html">Связаться с автором</a> </p>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакты — CSS Frameworks Guide</title>
+  <link rel="stylesheet" href="https://unpkg.com/chota@latest">
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <div class="nav-left">
+        <a class="brand" href="index.html"><strong>CSS-Guide</strong></a>
+        <button class="button clear nav-toggle" id="burger-btn" aria-label="Открыть меню">☰</button>
+      </div>
+      <div class="nav-right" id="nav-menu">
+        <a href="index.html">Главная</a>
+        <a href="bootstrap.html">Bootstrap</a>
+        <a href="tailwind.html">Tailwind</a>
+        <a href="bulma.html">Bulma</a>
+        <a href="foundation.html">Foundation</a>
+        <a href="chota.html">Chota</a>
+        <a href="comparison.html">Сравнение</a>
+        <a href="tutorials.html">Видео</a>
+        <a href="contacts.html" class="active">Контакты</a>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container main-layout">
+    <div class="row">
+      <main class="col-12 col-8-desktop">
+        <section class="card content-card">
+          <h1>Связь с разработчиком</h1>
+          <p>Есть вопросы по материалам сайта или вы нашли ошибку в таблице сравнения фреймворков? Заполните форму ниже, и мы ответим вам в ближайшее время.</p>
+          
+          <form id="contact-form" class="mt-2" action="#" method="get">
+            <fieldset>
+              <legend>Форма обратной связи</legend>
+              
+              <div class="row mb-1">
+                <div class="col-12 col-6-desktop">
+                  <label for="name">Ваше имя <span class="text-error">*</span></label>
+                  <input type="text" id="name" name="name" required placeholder="Иван Иванов">
+                </div>
+                <div class="col-12 col-6-desktop">
+                  <label for="email">Ваш Email <span class="text-error">*</span></label>
+                  <input type="email" id="email" name="email" required placeholder="ivan@example.com">
+                </div>
+              </div>
+
+              <div class="row mb-1">
+                <div class="col-12">
+                  <label for="topic">Тема обращения</label>
+                  <select id="topic" name="topic">
+                    <option value="bug">Ошибка на сайте</option>
+                    <option value="question">Вопрос по фреймворку</option>
+                    <option value="other">Другое</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="row mb-1">
+                <div class="col-12">
+                  <label for="message">Сообщение <span class="text-error">*</span></label>
+                  <textarea id="message" name="message" rows="5" required placeholder="Введите текст вашего сообщения..."></textarea>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-12">
+                  <button type="submit" class="button primary">Отправить сообщение</button>
+                  <button type="reset" class="button outline">Очистить форму</button>
+                </div>
+              </div>
+            </fieldset>
+          </form>
+        </section>
+      </main>
+      
+      <aside class="col-12 col-4-desktop">
+        <div class="card sidebar-card mb-2">
+          <h3>Навигация по базе</h3>
+          <ul class="is-unstyled">
+            <li><a href="bootstrap.html" class="button full-width outline mb-1">Обзор Bootstrap</a></li>
+            <li><a href="tailwind.html" class="button full-width outline mb-1">Обзор Tailwind</a></li>
+            <li><a href="chota.html" class="button full-width outline">Обзор Chota</a></li>
+          </ul>
+        </div>
+        <div class="card sidebar-card">
+          <h3>Наши контакты</h3>
+          <ul class="is-unstyled">
+            <li>📧 Email: <a href="mailto:leongorst2006@gmail.com">leongorst2006@gmail.com</a></li>
+            <li>🐙 GitHub: <a href="https://github.com/LeondeHor">Профиль</a></li>
+            <li>📍 Город: Сыктывкар, РФ</li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container text-center">
+      <p>&copy; 2026 Учебный проект «CSS-фреймворки». Все права защищены.</p>
+      <p><a href="contacts.html">Связаться с автором</a></p>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwind CSS — CSS Frameworks Guide</title>
+  <link rel="stylesheet" href="https://unpkg.com/chota@latest">
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <div class="nav-left">
+        <a class="brand" href="index.html"><strong>CSS-Guide</strong></a>
+        <button class="button clear nav-toggle" id="burger-btn" aria-label="Открыть меню">☰</button>
+      </div>
+      <div class="nav-right" id="nav-menu">
+        <a href="index.html">Главная</a>
+        <a href="bootstrap.html">Bootstrap</a>
+        <a href="tailwind.html" class="active">Tailwind</a>
+        <a href="bulma.html">Bulma</a>
+        <a href="foundation.html">Foundation</a>
+        <a href="chota.html">Chota</a>
+        <a href="comparison.html">Сравнение</a>
+        <a href="tutorials.html">Видео</a>
+        <a href="contacts.html">Контакты</a>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container main-layout">
+    <div class="row">
+      <main class="col-12 col-8-desktop">
+        <section class="card content-card">
+          <h1>Tailwind CSS: Utility-First подход</h1>
+          <p>В отличие от Bootstrap, <strong>Tailwind CSS</strong> не предоставляет готовых UI-компонентов вроде кнопок или карточек. Вместо этого он предоставляет низкоуровневые служебные классы (utilities), которые позволяют создавать любой дизайн прямо в HTML-разметке.</p>
+          
+          <h2>Концепция Utility-First</h2>
+          <p>Вместо того чтобы писать <code>&lt;button class="btn btn-primary"&gt;</code>, в Tailwind вы описываете внешний вид детально: <code>&lt;button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"&gt;</code>.</p>
+          
+          <h3>Почему Tailwind так популярен?</h3>
+          <ol>
+            <li><strong>Уникальный дизайн:</strong> Никаких шаблонных интерфейсов. Вы контролируете каждый пиксель.</li>
+            <li><strong>Никакого переключения контекста:</strong> Вам не нужно постоянно переключаться между HTML и CSS файлами.</li>
+            <li><strong>Оптимизация:</strong> При сборке проекта Tailwind удаляет все неиспользуемые классы, в результате чего итоговый CSS-файл часто весит менее 10 КБ.</li>
+          </ol>
+          <p>Единственный минус Tailwind — HTML-код может стать трудночитаемым из-за обилия классов. Однако при использовании компонентных фреймворков (React, Vue) этот недостаток нивелируется.</p>
+        </section>
+      </main>
+      
+      <aside class="col-12 col-4-desktop">
+        <div class="card sidebar-card mb-2">
+          <h3>Навигация по базе</h3>
+          <ul class="is-unstyled">
+            <li><a href="bootstrap.html" class="button full-width outline mb-1">Обзор Bootstrap</a></li>
+            <li><a href="tailwind.html" class="button full-width outline mb-1">Обзор Tailwind</a></li>
+            <li><a href="chota.html" class="button full-width outline">Обзор Chota</a></li>
+          </ul>
+        </div>
+        <div class="card sidebar-card">
+          <h3>Подписка на обновления</h3>
+          <form id="subscribe-form">
+            <label for="sub-email">Ваш Email:</label>
+            <input type="email" id="sub-email" placeholder="name@example.com" required class="mb-1">
+            <button type="submit" class="button primary full-width">Подписаться</button>
+          </form>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container text-center">
+      <p>&copy; 2026 Учебный проект «CSS-фреймворки». Все права защищены.</p>
+      <p><a href="contacts.html">Связаться с автором</a></p>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

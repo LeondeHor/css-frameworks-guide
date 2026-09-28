@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chota CSS — CSS Frameworks Guide</title>
+  <link rel="stylesheet" href="https://unpkg.com/chota@latest">
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <div class="nav-left">
+        <a class="brand" href="index.html"><strong>CSS-Guide</strong></a>
+        <button class="button clear nav-toggle" id="burger-btn" aria-label="Открыть меню">☰</button>
+      </div>
+      <div class="nav-right" id="nav-menu">
+        <a href="index.html">Главная</a>
+        <a href="bootstrap.html">Bootstrap</a>
+        <a href="tailwind.html">Tailwind</a>
+        <a href="bulma.html">Bulma</a>
+        <a href="foundation.html">Foundation</a>
+        <a href="chota.html" class="active">Chota</a>
+        <a href="comparison.html">Сравнение</a>
+        <a href="tutorials.html">Видео</a>
+        <a href="contacts.html">Контакты</a>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container main-layout">
+    <div class="row">
+      <main class="col-12 col-8-desktop">
+        <section class="card content-card">
+          <h1>Chota: Сверхлегкий микро-фреймворк</h1>
+          <p><strong>Chota</strong> (в переводе с хинди — «маленький») — это крошечный CSS-фреймворк, весящий всего около 3 КБ в сжатом виде. Именно этот фреймворк использован для создания дизайна данного учебного проекта.</p>
+          
+          <h2>Почему мы выбрали Chota?</h2>
+          <p>Для небольших образовательных или персональных проектов тащить за собой огромные файлы Bootstrap нерационально. Chota предоставляет абсолютный минимум, необходимый для создания красивой страницы:</p>
+          <ul>
+            <li><strong>12-колоночная сетка:</strong> Позволяет создавать сложные адаптивные макеты с классами <code>.row</code> и <code>.col</code>.</li>
+            <li><strong>Стилизация по умолчанию:</strong> Красивая типографика, формы, таблицы и кнопки, работающие "из коробки" без дополнительных классов.</li>
+            <li><strong>CSS-переменные:</strong> Легкая кастомизация. Достаточно переопределить переменные <code>--color-primary</code> или <code>--bg-color</code> в корневом псевдоклассе <code>:root</code>, и весь сайт изменит цветовую схему.</li>
+          </ul>
+          
+          <p>Chota не требует препроцессоров (SASS/LESS) и отлично подходит для тех, кто хочет изучать базовые принципы веб-разработки без лишней магии под капотом.</p>
+        </section>
+      </main>
+      
+      <aside class="col-12 col-4-desktop">
+        <div class="card sidebar-card mb-2">
+          <h3>Навигация по базе</h3>
+          <ul class="is-unstyled">
+            <li><a href="bootstrap.html" class="button full-width outline mb-1">Обзор Bootstrap</a></li>
+            <li><a href="tailwind.html" class="button full-width outline mb-1">Обзор Tailwind</a></li>
+            <li><a href="chota.html" class="button full-width outline">Обзор Chota</a></li>
+          </ul>
+        </div>
+        <div class="card sidebar-card">
+          <h3>Подписка на обновления</h3>
+          <form id="subscribe-form">
+            <label for="sub-email">Ваш Email:</label>
+            <input type="email" id="sub-email" placeholder="name@example.com" required class="mb-1">
+            <button type="submit" class="button primary full-width">Подписаться</button>
+          </form>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container text-center">
+      <p>&copy; 2026 Учебный проект «CSS-фреймворки». Все права защищены.</p>
+      <p><a href="contacts.html">Связаться с автором</a> </p>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

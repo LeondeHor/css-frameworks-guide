@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bulma CSS — CSS Frameworks Guide</title>
+  <link rel="stylesheet" href="https://unpkg.com/chota@latest">
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <div class="nav-left">
+        <a class="brand" href="index.html"><strong>CSS-Guide</strong></a>
+        <button class="button clear nav-toggle" id="burger-btn" aria-label="Открыть меню">☰</button>
+      </div>
+      <div class="nav-right" id="nav-menu">
+        <a href="index.html">Главная</a>
+        <a href="bootstrap.html">Bootstrap</a>
+        <a href="tailwind.html">Tailwind</a>
+        <a href="bulma.html" class="active">Bulma</a>
+        <a href="foundation.html">Foundation</a>
+        <a href="chota.html">Chota</a>
+        <a href="comparison.html">Сравнение</a>
+        <a href="tutorials.html">Видео</a>
+        <a href="contacts.html">Контакты</a>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container main-layout">
+    <div class="row">
+      <main class="col-12 col-8-desktop">
+        <section class="card content-card">
+          <h1>Bulma: Мощь Flexbox</h1>
+          <p><strong>Bulma</strong> — это бесплатный CSS-фреймворк с открытым исходным кодом, полностью основанный на технологии Flexbox. Он позиционируется как современная и более чистая альтернатива Bootstrap.</p>
+          
+          <h2>Архитектура без JavaScript</h2>
+          <p>Главная особенность Bulma заключается в том, что это <strong>чисто CSS фреймворк</strong>. Он не содержит JavaScript-кода. Если вам нужны переключающиеся модальные окна или выпадающие меню, вам придется написать скрипты самостоятельно или использовать связку с Vue/React.</p>
+          
+          <h3>Модификаторы синтаксиса</h3>
+          <p>Bulma использует очень интуитивный и читаемый синтаксис на основе модификаторов `is-` и `has-`. Например:</p>
+          <ul>
+            <li><code>&lt;button class="button is-primary is-large"&gt;</code> — создает большую синюю кнопку.</li>
+            <li><code>&lt;div class="container has-text-centered"&gt;</code> — центрирует текст внутри контейнера.</li>
+          </ul>
+          <p>Благодаря элегантному дизайну по умолчанию, сайты на Bulma выглядят современно и не требуют глубокой кастомизации для быстрого запуска проектов.</p>
+        </section>
+      </main>
+      
+      <aside class="col-12 col-4-desktop">
+        <div class="card sidebar-card mb-2">
+          <h3>Навигация по базе</h3>
+          <ul class="is-unstyled">
+            <li><a href="bootstrap.html" class="button full-width outline mb-1">Обзор Bootstrap</a></li>
+            <li><a href="tailwind.html" class="button full-width outline mb-1">Обзор Tailwind</a></li>
+            <li><a href="chota.html" class="button full-width outline">Обзор Chota</a></li>
+          </ul>
+        </div>
+        <div class="card sidebar-card">
+          <h3>Подписка на обновления</h3>
+          <form id="subscribe-form">
+            <label for="sub-email">Ваш Email:</label>
+            <input type="email" id="sub-email" placeholder="name@example.com" required class="mb-1">
+            <button type="submit" class="button primary full-width">Подписаться</button>
+          </form>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container text-center">
+      <p>&copy; 2026 Учебный проект «CSS-фреймворки». Все права защищены.</p>
+      <p><a href="contacts.html">Связаться с автором</a> </p>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
